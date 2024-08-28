@@ -1,0 +1,92 @@
+[
+  {
+    "customerId": "C001",
+    "name": "John Doe",
+    "transactions": [
+      { "transactionId": "T123", "transactionDate": "2024-06-27", "transactionAmount": 150.75 },
+      { "transactionId": "T124", "transactionDate": "2024-08-26", "transactionAmount": 200.50 },
+      { "transactionId": "T125", "transactionDate": "2024-07-25", "transactionAmount": 75.00 }
+    ]
+  },
+  {
+    "customerId": "C002",
+    "name": "Jane Smith",
+    "transactions": [
+      { "transactionId": "T126", "transactionDate": "2024-06-27", "transactionAmount": 300.00 },
+      { "transactionId": "T127", "transactionDate": "2024-08-26", "transactionAmount": 120.00 },
+      { "transactionId": "T128", "transactionDate": "2024-07-25", "transactionAmount": 450.25 }
+    ]
+  },
+  {
+    "customerId": "C003",
+    "name": "Alice Johnson",
+    "transactions": [
+      { "transactionId": "T129", "transactionDate": "2024-06-27", "transactionAmount": 500.00 },
+      { "transactionId": "T130", "transactionDate": "2024-08-26", "transactionAmount": 250.75 },
+      { "transactionId": "T131", "transactionDate": "2024-07-25", "transactionAmount": 101.00 }
+    ]
+  },
+  {
+    "customerId": "C004",
+    "name": "Bob Brown",
+    "transactions": [
+      { "transactionId": "T132", "transactionDate": "2024-06-27", "transactionAmount": 175.50 },
+      { "transactionId": "T133", "transactionDate": "2024-08-26", "transactionAmount": 225.75 },
+      { "transactionId": "T134", "transactionDate": "2024-07-25", "transactionAmount": 300.00 }
+    ]
+  },
+  {
+    "customerId": "C005",
+    "name": "Charlie Davis",
+    "transactions": [
+      { "transactionId": "T135", "transactionDate": "2024-06-27", "transactionAmount": 400.00 },
+      { "transactionId": "T136", "transactionDate": "2024-08-26", "transactionAmount": 150.25 },
+      { "transactionId": "T137", "transactionDate": "2024-07-25", "transactionAmount": 275.50 }
+    ]
+  },
+  {
+    "customerId": "C006",
+    "name": "Diana Evans",
+    "transactions": [
+      { "transactionId": "T138", "transactionDate": "2024-06-27", "transactionAmount": 600.00 },
+      { "transactionId": "T139", "transactionDate": "2024-08-26", "transactionAmount": 350.75 },
+      { "transactionId": "T140", "transactionDate": "2024-07-25", "transactionAmount": 125.00 }
+    ]
+  },
+  {
+    "customerId": "C007",
+    "name": "Edward Foster",
+    "transactions": [
+      { "transactionId": "T141", "transactionDate": "2024-06-27", "transactionAmount": 250.00 },
+      { "transactionId": "T142", "transactionDate": "2024-08-26", "transactionAmount": 175.25 },
+      { "transactionId": "T143", "transactionDate": "2024-07-25", "transactionAmount": 300.50 }
+    ]
+  },
+  {
+    "customerId": "C008",
+    "name": "Fiona Green",
+    "transactions": [
+      { "transactionId": "T144", "transactionDate": "2024-06-27", "transactionAmount": 450.00 },
+      { "transactionId": "T145", "transactionDate": "2024-08-26", "transactionAmount": 225.75 },
+      { "transactionId": "T146", "transactionDate": "2024-07-25", "transactionAmount": 375.00 }
+    ]
+  },
+  {
+    "customerId": "C009",
+    "name": "George Harris",
+    "transactions": [
+      { "transactionId": "T147", "transactionDate": "2024-06-27", "transactionAmount": 550.00 },
+      { "transactionId": "T148", "transactionDate": "2024-08-26", "transactionAmount": 275.25 },
+      { "transactionId": "T149", "transactionDate": "2024-07-25", "transactionAmount": 425.50 }
+    ]
+  },
+  {
+    "customerId": "C010",
+    "name": "Hannah Irving",
+    "transactions": [
+      { "transactionId": "T150", "transactionDate": "2024-06-27", "transactionAmount": 700.00 },
+      { "transactionId": "T151", "transactionDate": "2024-08-26", "transactionAmount": 350.75 },
+      { "transactionId": "T152", "transactionDate": "2024-07-25", "transactionAmount": 500.00 }
+    ]
+  }
+]

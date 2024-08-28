@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# Customer Reward Points Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The React Application  calculates and display reward points for customers based on their purchase history over the last three months. It includes features such as interactive user interface that displays custoer details, monthly reward points and total reward points
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+The application takes a list of customers and their transactions and calculates the reward points earned by each customer per month and in total.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Display a list of customers and their transactions
+- Calculate the reward points based on predefined threshold
+- Display the reward points earned by each customer per month
+- Display the total reward points earned by each customer
+- Responsive design
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. Clone the repository: `git clone https://github.com/archanaaniyan1341/UIAssignment`
+``` Server setup
+1. Navigate to the project directory: `cd server`
+2. Start the server : ` node server.js`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+``
 
-### `npm run build`
+``` Frontend Setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Navigate to the project directory: `cd reward-tracker`
+2. Install the dependencies: `npm install`
+3. Start the application: `npm start`
+``
+## Project Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- `src/`: This directory contains all the source code for the application.
+  - `components/`: This directory contains all the React components.
+  - `config/`: This directory contains configuration files
+  - `styles/`: This directory contains css files specific to components
+  - `tests`: This directory contains unit tests
+  - `utils/`: This directory contains utility functions, such as the reward points calculator.
+- `public/`: This directory contains static files, such as the index.html file.
+- `.env`: This file contains environment variables.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```php
+.
+├── public/
+│  
+├── src/
+│   ├── components/
+│   ├── config/
+│   ├── services/
+│   ├── styles/
+│   ├── tests/
+│   ├── utils/
+|   ├── App.css
+|   ├── App.js
+|   ├── index.css
+|   ├── index.js
+├── .env
+├── .gitignore
+├── package.json
+└── README.md
 
-### `npm run eject`
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Configuration
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The application uses environment variables to configure certain aspects, such as the API URL for fetching transaction data. These variables are defined in the `.env` file.
+Apart from env the application also provides config.json to configure the threshold and point values used for rewards calculation.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Error Handling
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The application has basic error handling in place. If an error occurs while fetching transaction data, the error will be logged to the console.
 
-## Learn More
+## Testing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Unit Tests: The application includes unit tests for critical components and business logic. The tests are written using Jest and React Testing Library
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To run the tests, use the command `npm test`.
 
-### Code Splitting
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Contributions are welcome. Please submit a pull request or create an issue to discuss the changes you want to make.
 
-### Analyzing the Bundle Size
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License.
