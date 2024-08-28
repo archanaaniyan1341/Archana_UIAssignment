@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #007bff;
-  --secondary-color: #6c757d;
+  --primary-color: #00bfff;
+  --secondary-color: #c6e2fa;
   --background-color: #f8f9fa;
-  --text-color: #343a40;
+  --text-color: #333538;
   --border-radius: 0.25rem;
   --transition-speed: 0.3s
 }
@@ -18,9 +18,9 @@ body {
 header {
   background-color: var(--primary-color);
   color: white;
-  padding: 1rem;
+  padding: 0.5rem;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .container {
@@ -31,55 +31,6 @@ header {
   border-radius: var(--border-radius);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-.customr-selection {
-  margin-bottom: 1.5rem;
-}
-
-.customr-selection select {
-  width: 100%;
-  padding: 0.5rem;
-  font-size: 1rem;
-  border: 1px solid var(--secondary-color);
-  border-radius: var(--border-radius);
-  transition: var(--background-color) var(--transition-speed);
-}
-
-.customr-selection select:focus {
-  border-color: var(--primary-color);
-  outline: none;
-}
-
-.transactions-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 1.5rem;
-}
-
-.transactions-table th,
-.transactions-table td {
-  padding: 0.75rem;
-  text-align: left;
-  border-bottom: 1px solid var(--secondary-color);
-}
-
-.transactions-table th {
-  background-color: var(--primary-color);
-  color: white;
-}
-
-.transactions-table tr:hover {
-  background-color: var(--background-color);
-}
-
-.summary-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 0;
-  border-top: 1px solid var(--secondary-color);
-}
-
 .total-points {
   font-size: 1.25rem;
   font-weight: bold;
@@ -89,4 +40,53 @@ header {
 .monthly-points {
   font-size: 1rem;
   color: var(--secondary-color);
+}
+
+/* Customers.css */
+.customers-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* CustomerMonthlyPoints.css */
+.customer-card {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 20rem;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  align-items: center;
+}
+
+.customer-card h2, h3{
+  margin-top: 0;
+}
+
+.customer-card p {
+  margin: 5px 0;
+}
+.customer-card b {
+ color: #5d5e5f;
+}
+
+.customer-card {
+  margin-bottom: 1.5rem;
+}
+
+.customer-card select {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid var(--secondary-color);
+  border-radius: var(--border-radius);
+  transition: var(--background-color) var(--transition-speed);
+}
+
+.customer-card:hover {
+  background-color: var(--secondary-color);
 }

@@ -36,8 +36,7 @@ const CustomerPoints = () => {
     }
 
     return (
-        <div>
-            <h1>Customer Reward Points</h1>
+        <div className='customers-container'>
             {customers.map((customer) => (
                 <CustomerMonthlyPoints key={customer.customerId} customer={customer} />
             ))}

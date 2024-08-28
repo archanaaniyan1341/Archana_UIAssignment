@@ -11,12 +11,16 @@ const CustomerMonthlyPoints = ({ customer }) => {
         const monthlyPoints = {};
         transactions.forEach(({ transactionDate, transactionAmount }) => {
             const month = new Date(transactionDate).toLocaleString('default', { month: 'long' });
+            var today = new Date();
+            // const thresholdDate = today.setMonth(today.getMonth() - 3);
+            // if(transactionDate > thresholdDate){
             const points = calculatePoints(transactionAmount);
             if (monthlyPoints[month]) {
                 monthlyPoints[month] += points;
             } else {
                 monthlyPoints[month] = points;
             }
+            // }
         });
         return monthlyPoints;
     }
@@ -25,16 +29,16 @@ const CustomerMonthlyPoints = ({ customer }) => {
     const totalPoints = Object.values(monthlyPoints).reduce((a, b) => a + b, 0);
 
     return (
-        <div>
+        <div className="customer-card">
             <h2>{customer.name}</h2>
-            <ul>
-                {Object.entries(monthlyPoints).map(([month, points]) => (
-                    <li key={month}>{month}:{points}points</li>
+            <h3>ID: {customer.customerId}</h3>
+            {Object.entries(monthlyPoints)
+                .map(([month, points], index) => (
+                    <p key={index}>{month} : {points}</p>
                 ))}
-            </ul>
-            <p>Total Points: {totalPoints}</p>
+            <p><b>Total Points: {totalPoints}</b></p>
         </div>
     )
-}
+    }
 
 export default CustomerMonthlyPoints;
