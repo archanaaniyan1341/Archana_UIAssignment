@@ -1,5 +1,7 @@
 import React from 'react';
-
+/**
+ *  This component displays application header
+ */
 const Header = () => {
     return(
         <header>

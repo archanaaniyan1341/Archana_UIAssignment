@@ -21,7 +21,7 @@
     "customerId": "C003",
     "name": "Alice Johnson",
     "transactions": [
-      { "transactionId": "T129", "transactionDate": "2024-06-27", "transactionAmount": 500.00 },
+      { "transactionId": "T129", "transactionDate": "2024-05-27", "transactionAmount": 500.00 },
       { "transactionId": "T130", "transactionDate": "2024-08-26", "transactionAmount": 250.75 },
       { "transactionId": "T131", "transactionDate": "2024-07-25", "transactionAmount": 101.00 }
     ]
@@ -32,7 +32,7 @@
     "transactions": [
       { "transactionId": "T132", "transactionDate": "2024-06-27", "transactionAmount": 175.50 },
       { "transactionId": "T133", "transactionDate": "2024-08-26", "transactionAmount": 225.75 },
-      { "transactionId": "T134", "transactionDate": "2024-07-25", "transactionAmount": 300.00 }
+      { "transactionId": "T134", "transactionDate": "2024-04-25", "transactionAmount": 300.00 }
     ]
   },
   {

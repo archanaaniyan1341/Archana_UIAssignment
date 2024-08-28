@@ -12,27 +12,29 @@ const CustomerPoints = () => {
     const [customers, setCustomers] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-
+    // Fetch transaction data and set customers state
     useEffect(() => {
         const getTransactionData = async () => {
             try {
                 const data = await fetchTransactionData();
                 setCustomers(data);
             } catch (error) {
-                setError('Failed to load data')
+                setError('Failed to load data');
             } finally {
                 setLoading(false);
             }
-        }
+        };
         getTransactionData();
-    }, [])
+    }, []);
 
+    // Display loading spinner while data is being fetched
     if (loading) {
-        return <LoadingSpinner />
+        return <LoadingSpinner />;
     }
 
+    // Display error message if data fetching fails
     if (error) {
-        return <p>{error}</p>
+        return <p>{error}</p>;
     }
 
     return (
