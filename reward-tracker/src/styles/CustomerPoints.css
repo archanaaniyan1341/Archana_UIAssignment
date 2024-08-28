@@ -1,0 +1,48 @@
+.customers-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* CustomerMonthlyPoints.css */
+  .customer-card {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20rem;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    align-items: center;
+  }
+  
+  .customer-card h2, h3{
+    margin-top: 0;
+  }
+  
+  .customer-card p {
+    margin: 5px 0;
+  }
+  .customer-card b {
+   color: #5d5e5f;
+  }
+  
+  .customer-card {
+    margin-bottom: 1.5rem;
+  }
+  
+  .customer-card select {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: var(--border-radius);
+    transition: var(--background-color) var(--transition-speed);
+  }
+  
+  .customer-card:hover {
+    background-color: var(--secondary-color);
+  }
+  

@@ -1,5 +1,6 @@
 import React from "react";
 import { calculatePoints } from "../utils/rewardCalculator";
+import CustomerTotalPoints from "./CustomerTotalPoints";
 
 /**
  * Component to display the reward points for a customer by month
@@ -11,16 +12,12 @@ const CustomerMonthlyPoints = ({ customer }) => {
         const monthlyPoints = {};
         transactions.forEach(({ transactionDate, transactionAmount }) => {
             const month = new Date(transactionDate).toLocaleString('default', { month: 'long' });
-            var today = new Date();
-            // const thresholdDate = today.setMonth(today.getMonth() - 3);
-            // if(transactionDate > thresholdDate){
             const points = calculatePoints(transactionAmount);
             if (monthlyPoints[month]) {
                 monthlyPoints[month] += points;
             } else {
                 monthlyPoints[month] = points;
             }
-            // }
         });
         return monthlyPoints;
     }
@@ -36,9 +33,9 @@ const CustomerMonthlyPoints = ({ customer }) => {
                 .map(([month, points], index) => (
                     <p key={index}>{month} : {points}</p>
                 ))}
-            <p><b>Total Points: {totalPoints}</b></p>
+            <CustomerTotalPoints monthlyPoints={monthlyPoints} />
         </div>
     )
-    }
+}
 
 export default CustomerMonthlyPoints;

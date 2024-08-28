@@ -1,8 +1,8 @@
 import React, { useEffect, useState, memo } from 'react';
 import { fetchTransactionData } from '../services/api';
-import { calculatePoints } from '../utils/rewardCalculator';
 import CustomerMonthlyPoints from './CustomerMonthlyPoints';
 import LoadingSpinner from './LoadingSpinner';
+import '../styles/CustomerPoints.css';
 
 /**
  * Displays reward point for each customer
