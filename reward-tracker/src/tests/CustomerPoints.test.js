@@ -16,12 +16,12 @@ test('renders customer data correctly', async () => {
         {
             customerId: 1,
             name: "Aswin",
-            transactions: [{ transactionDate: '2024-01-15', transactionAmount: 120 }]
+            transactions: [{ transactionDate: '2024-08-15', transactionAmount: 120 }]
         }
     ])
     render(<CustomerPoints />);
     await waitFor(() => expect(screen.getByText(/Aswin/i)).toBeInTheDocument());
-    let monthlyPoints = screen.getByText(/January : 90/i)
+    let monthlyPoints = screen.getByText(/August : 90/i)
     expect(monthlyPoints).toBeInTheDocument();
     let idElement = screen.getByText(/ID: 1/i);
     expect(idElement).toBeInTheDocument();
